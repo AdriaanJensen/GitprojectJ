@@ -1,0 +1,78 @@
+
+#KuvertA = 2*0.229 * 0.324
+#AffischA = 2*0.297 * 0.420
+#InforA = 0.210 * 0.297
+
+#Kuvertytvikt = float(input("Kuvert ytvikt "))
+#Affischytvikt = float(input("Affisch ytvikt "))
+#Inforytvikt = float(input("Infor ytvikt "))
+
+#Totalvikt = KuvertA*Kuvertytvikt+AffischA*Affischytvikt+InforA*Inforytvikt
+
+#print(Totalvikt)
+
+#Vokaler = "aeiouy"
+#Mening = input("Skriv en mening på svenska ")
+#arabiska = ""
+#kortavokaler = []
+#n = len(Mening)
+#for i in range(n-2):
+    #if Mening[i] in Vokaler:
+        #if not(Mening[i + 1] in Vokaler) and not(Mening[i + 2] in Vokaler):
+            #kortavokaler.append(i)
+#for i in range(n):
+    #if not(i in kortavokaler):
+        #arabiska += Mening[i]
+#print(arabiska[::-1])
+
+
+#N = int(input("Ange golvets storlek: "))
+#Golv = []
+#for i in range(N):
+    #Golv.append(".")
+#print(Golv)
+#print( )
+#for j in range(N):
+    #Nyrad = []
+    #for i in range(N):
+        #Nyrad.append(".")
+    #Golv[j] = Nyrad
+
+
+#Golv[2][1] = "M"
+#Golv[0][4] = "Skåne"
+#for row in Golv:
+    #print(row)
+
+
+Contestants = int(input("Amount of People: "))
+Island = 0
+My = 1
+Myone = True
+ForMy = 0
+SecondMy = False
+while Contestants > 0:
+    if Myone == True:
+        My += ForMy
+        Myone = False
+        SecondMy = True
+        Contestants = Contestants - ForMy
+    else:
+        ForMy += My
+        Myone = True
+        SecondMy = False
+        Contestants = Contestants - ForMy
+    Island += 1
+print(Island)
+
+bye = int(input("Amount Teabags: "))
+Amount = int(input("Amount of People"))
+
+hello = {}
+for j in range(bye):
+    hello["string{0}".format(j)] = int(input("Write Amount"))
+
+print(hello["strings"])
+
+
+
