@@ -151,7 +151,9 @@ print(f"Arrival time: {anKomstTid}")
 
 
 
-             
+             #There are some ideas that i would like to pursue after this project is handed in that i could not fit into the time frame
+             #Like making a server that could keep the programm running without me having to dtart it
+             #Using Docker and Linux and using NAS serversg
 
 
 
